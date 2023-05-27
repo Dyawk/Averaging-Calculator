@@ -10,8 +10,6 @@ public class Main {
 	static int howlong = 0;
 	static String ALL_VALUES = "";
 	
-	// ---- Runtime functions ---- \\
-	
 	public static void main(String[] args) {
 		clearConsole();
 		HasFinished = false;
@@ -24,8 +22,8 @@ public class Main {
 	}
 	
 	static void WelcomeMessage(int Which) {
-		System.out.println("--- CALCULER UNE MOYENNE --- \n");
-		if(Which == 0) System.out.println(" > Entrez une valeur: \n");
+		System.out.println("--- AVERAGE CALCULATOR --- \n");
+		if(Which == 0) System.out.println(" > Enter a value (to avoid crashes, use "6.59" instead of "6.59") : \n");
 	}
 	
 	@SuppressWarnings("resource")
@@ -48,12 +46,12 @@ public class Main {
 	}
 	
 	static void CalculateAverage() {
-		System.out.println(howlong + " VALEUR(S)    : " + ALL_VALUES);
+		System.out.println(howlong + " VALUE(S)    : " + ALL_VALUES);
 		float totalValue = 0;
 		for(int i = 0; i < howlong; i++) totalValue += Average[i];
 		totalValue = totalValue / howlong;
-		System.out.println("MOYENNE TOTALE : " + totalValue + "\n");
-		System.out.println(" > Entrez une autre valeur: \n");
+		System.out.println("AVERAGE TOTAL : " + totalValue + "\n");
+		System.out.println(" > Enter another value (to avoid crashes, use "6.59" instead of "6.59") : \n");
 	}
 	
 	
