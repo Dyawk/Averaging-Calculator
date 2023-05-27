@@ -23,7 +23,7 @@ public class Main {
 	
 	static void WelcomeMessage(int Which) {
 		System.out.println("--- AVERAGE CALCULATOR --- \n");
-		if(Which == 0) System.out.println(" > Enter a value (to avoid crashes, use "6.59" instead of "6.59") : \n");
+		if(Which == 0) System.out.println(" > Enter a value (to avoid crashes, use '6,59' instead of '6.59') : \n");
 	}
 	
 	@SuppressWarnings("resource")
@@ -41,8 +41,6 @@ public class Main {
 
 		howlong += 1;
 		CalculateAverage();
-		
-
 	}
 	
 	static void CalculateAverage() {
@@ -51,7 +49,7 @@ public class Main {
 		for(int i = 0; i < howlong; i++) totalValue += Average[i];
 		totalValue = totalValue / howlong;
 		System.out.println("AVERAGE TOTAL : " + totalValue + "\n");
-		System.out.println(" > Enter another value (to avoid crashes, use "6.59" instead of "6.59") : \n");
+		System.out.println(" > Enter another value (to avoid crashes, use '6,59' instead of '6.59') : \n");
 	}
 	
 	
